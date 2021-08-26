@@ -8,6 +8,13 @@ group = 'com.kpsec'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '8'
 
+bootJar {
+	mainClass = 'com.kpsec.test.TestApplication'
+	archiveBaseName = 'kpsec-test'
+	archiveFileName = 'kpsec-test.jar'
+	archiveVersion = '1.0.0'
+}
+
 configurations {
 	compileOnly {
 		extendsFrom annotationProcessor
